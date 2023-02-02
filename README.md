@@ -1,1 +1,1 @@
-# HybridDataStructures
+# hybrid-data-structures
