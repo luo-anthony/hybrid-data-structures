@@ -2,7 +2,7 @@
 A C++ library for performance/cache optimized hybrid data structures. 
 
 ![GitHub](https://img.shields.io/github/license/luo-anthony/hybrid-data-structures)
-
+![Issues](https://img.shields.io/github/issues/luo-anthony/hybrid-data-structures)
 
 
 ## Overview 
