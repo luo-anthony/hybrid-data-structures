@@ -73,15 +73,15 @@ CMakeFiles/HybridStructures.dir/src/hybridDS.cpp.o: CMakeFiles/HybridStructures.
 CMakeFiles/HybridStructures.dir/src/hybridDS.cpp.o: /Users/anthonyluo/Documents/hybrid-data-structures/src/hybridDS.cpp
 CMakeFiles/HybridStructures.dir/src/hybridDS.cpp.o: CMakeFiles/HybridStructures.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/anthonyluo/Documents/hybrid-data-structures/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/HybridStructures.dir/src/hybridDS.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HybridStructures.dir/src/hybridDS.cpp.o -MF CMakeFiles/HybridStructures.dir/src/hybridDS.cpp.o.d -o CMakeFiles/HybridStructures.dir/src/hybridDS.cpp.o -c /Users/anthonyluo/Documents/hybrid-data-structures/src/hybridDS.cpp
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HybridStructures.dir/src/hybridDS.cpp.o -MF CMakeFiles/HybridStructures.dir/src/hybridDS.cpp.o.d -o CMakeFiles/HybridStructures.dir/src/hybridDS.cpp.o -c /Users/anthonyluo/Documents/hybrid-data-structures/src/hybridDS.cpp
 
 CMakeFiles/HybridStructures.dir/src/hybridDS.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HybridStructures.dir/src/hybridDS.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/anthonyluo/Documents/hybrid-data-structures/src/hybridDS.cpp > CMakeFiles/HybridStructures.dir/src/hybridDS.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/anthonyluo/Documents/hybrid-data-structures/src/hybridDS.cpp > CMakeFiles/HybridStructures.dir/src/hybridDS.cpp.i
 
 CMakeFiles/HybridStructures.dir/src/hybridDS.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HybridStructures.dir/src/hybridDS.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/anthonyluo/Documents/hybrid-data-structures/src/hybridDS.cpp -o CMakeFiles/HybridStructures.dir/src/hybridDS.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/anthonyluo/Documents/hybrid-data-structures/src/hybridDS.cpp -o CMakeFiles/HybridStructures.dir/src/hybridDS.cpp.s
 
 # Object files for target HybridStructures
 HybridStructures_OBJECTS = \

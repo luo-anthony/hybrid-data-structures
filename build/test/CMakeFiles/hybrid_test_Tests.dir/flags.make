@@ -4,7 +4,7 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/anthonyluo/Documents/hybrid-data-structures/include -I/Users/anthonyluo/Documents/hybrid-data-structures/src
+CXX_INCLUDES = -I/Users/anthonyluo/Documents/hybrid-data-structures/include -isystem /usr/local/include
 
 CXX_FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -D_DEBUG -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -std=gnu++17
 

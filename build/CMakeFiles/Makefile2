@@ -64,15 +64,32 @@ CMAKE_BINARY_DIR = /Users/anthonyluo/Documents/hybrid-data-structures/build
 
 # The main recursive "all" target.
 all: CMakeFiles/HybridStructures.dir/all
+all: test/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: test/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/HybridStructures.dir/clean
+clean: test/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory test
+
+# Recursive "all" directory target.
+test/all: test/CMakeFiles/hybrid_test_Tests.dir/all
+.PHONY : test/all
+
+# Recursive "preinstall" directory target.
+test/preinstall:
+.PHONY : test/preinstall
+
+# Recursive "clean" directory target.
+test/clean: test/CMakeFiles/hybrid_test_Tests.dir/clean
+.PHONY : test/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/HybridStructures.dir
@@ -99,6 +116,32 @@ HybridStructures: CMakeFiles/HybridStructures.dir/rule
 CMakeFiles/HybridStructures.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridStructures.dir/build.make CMakeFiles/HybridStructures.dir/clean
 .PHONY : CMakeFiles/HybridStructures.dir/clean
+
+#=============================================================================
+# Target rules for target test/CMakeFiles/hybrid_test_Tests.dir
+
+# All Build rule for target.
+test/CMakeFiles/hybrid_test_Tests.dir/all: CMakeFiles/HybridStructures.dir/all
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/hybrid_test_Tests.dir/build.make test/CMakeFiles/hybrid_test_Tests.dir/depend
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/hybrid_test_Tests.dir/build.make test/CMakeFiles/hybrid_test_Tests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/anthonyluo/Documents/hybrid-data-structures/build/CMakeFiles --progress-num=3,4 "Built target hybrid_test_Tests"
+.PHONY : test/CMakeFiles/hybrid_test_Tests.dir/all
+
+# Build rule for subdir invocation for target.
+test/CMakeFiles/hybrid_test_Tests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/anthonyluo/Documents/hybrid-data-structures/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/hybrid_test_Tests.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/anthonyluo/Documents/hybrid-data-structures/build/CMakeFiles 0
+.PHONY : test/CMakeFiles/hybrid_test_Tests.dir/rule
+
+# Convenience name for target.
+hybrid_test_Tests: test/CMakeFiles/hybrid_test_Tests.dir/rule
+.PHONY : hybrid_test_Tests
+
+# clean rule for target.
+test/CMakeFiles/hybrid_test_Tests.dir/clean:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/hybrid_test_Tests.dir/build.make test/CMakeFiles/hybrid_test_Tests.dir/clean
+.PHONY : test/CMakeFiles/hybrid_test_Tests.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

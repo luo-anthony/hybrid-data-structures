@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/anthonyluo/Documents/hybrid-data-structures/build/CMakeFiles /Users/anthonyluo/Documents/hybrid-data-structures/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /Users/anthonyluo/Documents/hybrid-data-structures/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/anthonyluo/Documents/hybrid-data-structures/build/CMakeFiles /Users/anthonyluo/Documents/hybrid-data-structures/build/test//CMakeFiles/progress.marks
+	cd /Users/anthonyluo/Documents/hybrid-data-structures/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/anthonyluo/Documents/hybrid-data-structures/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /Users/anthonyluo/Documents/hybrid-data-structures/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,68 +158,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/anthonyluo/Documents/hybrid-data-structures/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/anthonyluo/Documents/hybrid-data-structures/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/anthonyluo/Documents/hybrid-data-structures/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named HybridStructures
+# Convenience name for target.
+test/CMakeFiles/hybrid_test_Tests.dir/rule:
+	cd /Users/anthonyluo/Documents/hybrid-data-structures/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/hybrid_test_Tests.dir/rule
+.PHONY : test/CMakeFiles/hybrid_test_Tests.dir/rule
 
-# Build rule for target.
-HybridStructures: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HybridStructures
-.PHONY : HybridStructures
-
-# fast build rule for target.
-HybridStructures/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridStructures.dir/build.make CMakeFiles/HybridStructures.dir/build
-.PHONY : HybridStructures/fast
-
-#=============================================================================
-# Target rules for targets named hybrid_test_Tests
-
-# Build rule for target.
-hybrid_test_Tests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hybrid_test_Tests
+# Convenience name for target.
+hybrid_test_Tests: test/CMakeFiles/hybrid_test_Tests.dir/rule
 .PHONY : hybrid_test_Tests
 
 # fast build rule for target.
 hybrid_test_Tests/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/hybrid_test_Tests.dir/build.make test/CMakeFiles/hybrid_test_Tests.dir/build
+	cd /Users/anthonyluo/Documents/hybrid-data-structures/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/hybrid_test_Tests.dir/build.make test/CMakeFiles/hybrid_test_Tests.dir/build
 .PHONY : hybrid_test_Tests/fast
 
-src/hybridDS.o: src/hybridDS.cpp.o
-.PHONY : src/hybridDS.o
+src/hybrid_test.o: src/hybrid_test.cpp.o
+.PHONY : src/hybrid_test.o
 
 # target to build an object file
-src/hybridDS.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridStructures.dir/build.make CMakeFiles/HybridStructures.dir/src/hybridDS.cpp.o
-.PHONY : src/hybridDS.cpp.o
+src/hybrid_test.cpp.o:
+	cd /Users/anthonyluo/Documents/hybrid-data-structures/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/hybrid_test_Tests.dir/build.make test/CMakeFiles/hybrid_test_Tests.dir/src/hybrid_test.cpp.o
+.PHONY : src/hybrid_test.cpp.o
 
-src/hybridDS.i: src/hybridDS.cpp.i
-.PHONY : src/hybridDS.i
+src/hybrid_test.i: src/hybrid_test.cpp.i
+.PHONY : src/hybrid_test.i
 
 # target to preprocess a source file
-src/hybridDS.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridStructures.dir/build.make CMakeFiles/HybridStructures.dir/src/hybridDS.cpp.i
-.PHONY : src/hybridDS.cpp.i
+src/hybrid_test.cpp.i:
+	cd /Users/anthonyluo/Documents/hybrid-data-structures/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/hybrid_test_Tests.dir/build.make test/CMakeFiles/hybrid_test_Tests.dir/src/hybrid_test.cpp.i
+.PHONY : src/hybrid_test.cpp.i
 
-src/hybridDS.s: src/hybridDS.cpp.s
-.PHONY : src/hybridDS.s
+src/hybrid_test.s: src/hybrid_test.cpp.s
+.PHONY : src/hybrid_test.s
 
 # target to generate assembly for a file
-src/hybridDS.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridStructures.dir/build.make CMakeFiles/HybridStructures.dir/src/hybridDS.cpp.s
-.PHONY : src/hybridDS.cpp.s
+src/hybrid_test.cpp.s:
+	cd /Users/anthonyluo/Documents/hybrid-data-structures/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/hybrid_test_Tests.dir/build.make test/CMakeFiles/hybrid_test_Tests.dir/src/hybrid_test.cpp.s
+.PHONY : src/hybrid_test.cpp.s
 
 # Help Target
 help:
@@ -234,11 +222,10 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... HybridStructures"
 	@echo "... hybrid_test_Tests"
-	@echo "... src/hybridDS.o"
-	@echo "... src/hybridDS.i"
-	@echo "... src/hybridDS.s"
+	@echo "... src/hybrid_test.o"
+	@echo "... src/hybrid_test.i"
+	@echo "... src/hybrid_test.s"
 .PHONY : help
 
 
@@ -250,6 +237,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/anthonyluo/Documents/hybrid-data-structures/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

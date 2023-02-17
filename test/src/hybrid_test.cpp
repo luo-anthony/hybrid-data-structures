@@ -1,10 +1,10 @@
-#include "project/tmp.hpp"
+#include "hybridstructures/hybridDS.hpp"
 
 #include <gtest/gtest.h>
 
-TEST(TmpAddTest, CheckValues)
+TEST(HybridSubtractTest, CheckValues)
 {
-  ASSERT_EQ(tmp::add(1, 2), 3);
+  ASSERT_EQ(hybrid::subtract(3, 2), 1);
   EXPECT_TRUE(true);
 }
 
