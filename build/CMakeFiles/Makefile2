@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /Users/anthonyluo/Documents/hybrid-data-structures/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/MyNewProject.dir/all
+all: CMakeFiles/HybridStructures.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/MyNewProject.dir/clean
+clean: CMakeFiles/HybridStructures.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/MyNewProject.dir
+# Target rules for target CMakeFiles/HybridStructures.dir
 
 # All Build rule for target.
-CMakeFiles/MyNewProject.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyNewProject.dir/build.make CMakeFiles/MyNewProject.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyNewProject.dir/build.make CMakeFiles/MyNewProject.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/anthonyluo/Documents/hybrid-data-structures/build/CMakeFiles --progress-num=1,2 "Built target MyNewProject"
-.PHONY : CMakeFiles/MyNewProject.dir/all
+CMakeFiles/HybridStructures.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridStructures.dir/build.make CMakeFiles/HybridStructures.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridStructures.dir/build.make CMakeFiles/HybridStructures.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/anthonyluo/Documents/hybrid-data-structures/build/CMakeFiles --progress-num=1,2 "Built target HybridStructures"
+.PHONY : CMakeFiles/HybridStructures.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/MyNewProject.dir/rule: cmake_check_build_system
+CMakeFiles/HybridStructures.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/anthonyluo/Documents/hybrid-data-structures/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/MyNewProject.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/HybridStructures.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/anthonyluo/Documents/hybrid-data-structures/build/CMakeFiles 0
-.PHONY : CMakeFiles/MyNewProject.dir/rule
+.PHONY : CMakeFiles/HybridStructures.dir/rule
 
 # Convenience name for target.
-MyNewProject: CMakeFiles/MyNewProject.dir/rule
-.PHONY : MyNewProject
+HybridStructures: CMakeFiles/HybridStructures.dir/rule
+.PHONY : HybridStructures
 
 # clean rule for target.
-CMakeFiles/MyNewProject.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyNewProject.dir/build.make CMakeFiles/MyNewProject.dir/clean
-.PHONY : CMakeFiles/MyNewProject.dir/clean
+CMakeFiles/HybridStructures.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridStructures.dir/build.make CMakeFiles/HybridStructures.dir/clean
+.PHONY : CMakeFiles/HybridStructures.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

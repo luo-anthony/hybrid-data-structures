@@ -1,2 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc lib/Debug/libMyNewProject.a CMakeFiles/MyNewProject.dir/src/tmp.cpp.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib lib/Debug/libMyNewProject.a

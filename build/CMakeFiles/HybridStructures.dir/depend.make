@@ -1,2 +1,2 @@
-# Empty dependencies file for MyNewProject.
+# Empty dependencies file for HybridStructures.
 # This may be replaced when dependencies are built.

@@ -1,7 +1,7 @@
 [
 {
   "directory": "/Users/anthonyluo/Documents/hybrid-data-structures/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/anthonyluo/Documents/hybrid-data-structures/include -I/Users/anthonyluo/Documents/hybrid-data-structures/src -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -D_DEBUG -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -std=gnu++17 -o CMakeFiles/MyNewProject.dir/src/tmp.cpp.o -c /Users/anthonyluo/Documents/hybrid-data-structures/src/tmp.cpp",
-  "file": "/Users/anthonyluo/Documents/hybrid-data-structures/src/tmp.cpp"
+  "command": "/usr/bin/clang++  -I/Users/anthonyluo/Documents/hybrid-data-structures/include -I/Users/anthonyluo/Documents/hybrid-data-structures/src -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -D_DEBUG -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -std=gnu++17 -o CMakeFiles/HybridStructures.dir/src/hybridDS.cpp.o -c /Users/anthonyluo/Documents/hybrid-data-structures/src/hybridDS.cpp",
+  "file": "/Users/anthonyluo/Documents/hybrid-data-structures/src/hybridDS.cpp"
 }
 ]

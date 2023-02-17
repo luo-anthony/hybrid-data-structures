@@ -1,0 +1,2 @@
+/usr/bin/ar qc lib/Debug/libHybridStructures.a CMakeFiles/HybridStructures.dir/src/hybridDS.cpp.o
+/usr/bin/ranlib lib/Debug/libHybridStructures.a

@@ -34,27 +34,27 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/Library/Developer/CommandLineTools/usr/bin/objdump")
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/anthonyluo/Documents/hybrid-data-structures/build/lib/Debug/libMyNewProject.a")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libMyNewProject.a" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libMyNewProject.a")
-    execute_process(COMMAND "/Library/Developer/CommandLineTools/usr/bin/ranlib" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libMyNewProject.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/anthonyluo/Documents/hybrid-data-structures/build/lib/Debug/libHybridStructures.a")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libHybridStructures.a" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libHybridStructures.a")
+    execute_process(COMMAND "/usr/bin/ranlib" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libHybridStructures.a")
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/MyNewProject/MyNewProjectTargets.cmake")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/HybridStructures/HybridStructuresTargets.cmake")
     file(DIFFERENT _cmake_export_file_changed FILES
-         "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/MyNewProject/MyNewProjectTargets.cmake"
-         "/Users/anthonyluo/Documents/hybrid-data-structures/build/CMakeFiles/Export/d653b724202761fa1aea75272a250d3b/MyNewProjectTargets.cmake")
+         "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/HybridStructures/HybridStructuresTargets.cmake"
+         "/Users/anthonyluo/Documents/hybrid-data-structures/build/CMakeFiles/Export/6c8fc384da1cdc6ddd978b644d8acb91/HybridStructuresTargets.cmake")
     if(_cmake_export_file_changed)
-      file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/MyNewProject/MyNewProjectTargets-*.cmake")
+      file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/HybridStructures/HybridStructuresTargets-*.cmake")
       if(_cmake_old_config_files)
         string(REPLACE ";" ", " _cmake_old_config_files_text "${_cmake_old_config_files}")
-        message(STATUS "Old export file \"$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/MyNewProject/MyNewProjectTargets.cmake\" will be replaced.  Removing files [${_cmake_old_config_files_text}].")
+        message(STATUS "Old export file \"$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/HybridStructures/HybridStructuresTargets.cmake\" will be replaced.  Removing files [${_cmake_old_config_files_text}].")
         unset(_cmake_old_config_files_text)
         file(REMOVE ${_cmake_old_config_files})
       endif()
@@ -62,24 +62,24 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     endif()
     unset(_cmake_export_file_changed)
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/MyNewProject" TYPE FILE FILES "/Users/anthonyluo/Documents/hybrid-data-structures/build/CMakeFiles/Export/d653b724202761fa1aea75272a250d3b/MyNewProjectTargets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/HybridStructures" TYPE FILE FILES "/Users/anthonyluo/Documents/hybrid-data-structures/build/CMakeFiles/Export/6c8fc384da1cdc6ddd978b644d8acb91/HybridStructuresTargets.cmake")
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/MyNewProject" TYPE FILE FILES "/Users/anthonyluo/Documents/hybrid-data-structures/build/CMakeFiles/Export/d653b724202761fa1aea75272a250d3b/MyNewProjectTargets-debug.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/HybridStructures" TYPE FILE FILES "/Users/anthonyluo/Documents/hybrid-data-structures/build/CMakeFiles/Export/6c8fc384da1cdc6ddd978b644d8acb91/HybridStructuresTargets-debug.cmake")
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/mynewproject" TYPE FILE FILES "/Users/anthonyluo/Documents/hybrid-data-structures/build/include/mynewproject/version.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/hybridstructures" TYPE FILE FILES "/Users/anthonyluo/Documents/hybrid-data-structures/build/include/hybridstructures/version.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/Users/anthonyluo/Documents/hybrid-data-structures/include/mynewproject")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/Users/anthonyluo/Documents/hybrid-data-structures/include/hybridstructures")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/MyNewProject" TYPE FILE FILES
-    "/Users/anthonyluo/Documents/hybrid-data-structures/build/MyNewProjectConfig.cmake"
-    "/Users/anthonyluo/Documents/hybrid-data-structures/build/MyNewProjectConfigVersion.cmake"
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/HybridStructures" TYPE FILE FILES
+    "/Users/anthonyluo/Documents/hybrid-data-structures/build/HybridStructuresConfig.cmake"
+    "/Users/anthonyluo/Documents/hybrid-data-structures/build/HybridStructuresConfigVersion.cmake"
     )
 endif()
 

@@ -162,41 +162,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named MyNewProject
+# Target rules for targets named HybridStructures
 
 # Build rule for target.
-MyNewProject: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyNewProject
-.PHONY : MyNewProject
+HybridStructures: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HybridStructures
+.PHONY : HybridStructures
 
 # fast build rule for target.
-MyNewProject/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyNewProject.dir/build.make CMakeFiles/MyNewProject.dir/build
-.PHONY : MyNewProject/fast
+HybridStructures/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridStructures.dir/build.make CMakeFiles/HybridStructures.dir/build
+.PHONY : HybridStructures/fast
 
-src/tmp.o: src/tmp.cpp.o
-.PHONY : src/tmp.o
+src/hybridDS.o: src/hybridDS.cpp.o
+.PHONY : src/hybridDS.o
 
 # target to build an object file
-src/tmp.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyNewProject.dir/build.make CMakeFiles/MyNewProject.dir/src/tmp.cpp.o
-.PHONY : src/tmp.cpp.o
+src/hybridDS.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridStructures.dir/build.make CMakeFiles/HybridStructures.dir/src/hybridDS.cpp.o
+.PHONY : src/hybridDS.cpp.o
 
-src/tmp.i: src/tmp.cpp.i
-.PHONY : src/tmp.i
+src/hybridDS.i: src/hybridDS.cpp.i
+.PHONY : src/hybridDS.i
 
 # target to preprocess a source file
-src/tmp.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyNewProject.dir/build.make CMakeFiles/MyNewProject.dir/src/tmp.cpp.i
-.PHONY : src/tmp.cpp.i
+src/hybridDS.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridStructures.dir/build.make CMakeFiles/HybridStructures.dir/src/hybridDS.cpp.i
+.PHONY : src/hybridDS.cpp.i
 
-src/tmp.s: src/tmp.cpp.s
-.PHONY : src/tmp.s
+src/hybridDS.s: src/hybridDS.cpp.s
+.PHONY : src/hybridDS.s
 
 # target to generate assembly for a file
-src/tmp.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyNewProject.dir/build.make CMakeFiles/MyNewProject.dir/src/tmp.cpp.s
-.PHONY : src/tmp.cpp.s
+src/hybridDS.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridStructures.dir/build.make CMakeFiles/HybridStructures.dir/src/hybridDS.cpp.s
+.PHONY : src/hybridDS.cpp.s
 
 # Help Target
 help:
@@ -210,10 +210,10 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... MyNewProject"
-	@echo "... src/tmp.o"
-	@echo "... src/tmp.i"
-	@echo "... src/tmp.s"
+	@echo "... HybridStructures"
+	@echo "... src/hybridDS.o"
+	@echo "... src/hybridDS.i"
+	@echo "... src/hybridDS.s"
 .PHONY : help
 
 
