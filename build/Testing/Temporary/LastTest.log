@@ -1,0 +1,28 @@
+Start testing: Feb 17 13:58 EST
+----------------------------------------------------------
+1/1 Testing: hybrid_test
+1/1 Test: hybrid_test
+Command: "/Users/anthonyluo/Documents/hybrid-data-structures/build/test/hybrid_test_Tests"
+Directory: /Users/anthonyluo/Documents/hybrid-data-structures/build/test
+"hybrid_test" start time: Feb 17 13:58 EST
+Output:
+----------------------------------------------------------
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from HybridSubtractTest
+[ RUN      ] HybridSubtractTest.CheckValues
+[       OK ] HybridSubtractTest.CheckValues (0 ms)
+[----------] 1 test from HybridSubtractTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.22 sec
+----------------------------------------------------------
+Test Passed.
+"hybrid_test" end time: Feb 17 13:58 EST
+"hybrid_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Feb 17 13:58 EST

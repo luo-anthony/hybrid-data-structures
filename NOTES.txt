@@ -1,0 +1,5 @@
+NOTE: If want to change the build configuration, need to remove the files in build directory and re-run 'cmake' command with new options (new settings)
+This makes sense as each build directory = a build in that directory. 
+
+
+Using template from: https://github.com/filipdutescu/modern-cpp-template
