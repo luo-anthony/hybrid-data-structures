@@ -2,6 +2,7 @@
 A C++ library for various hybrid data structures. 
 
 ![GitHub](https://img.shields.io/github/license/luo-anthony/hybrid-data-structures)
+![Issues](https://img.shields.io/github/issues/luo-anthony/hybrid-data-structures)
 
 ## Overview 
 
