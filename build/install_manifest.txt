@@ -1,7 +1,0 @@
-/usr/local/lib/libHybridStructures.a
-/usr/local/lib/cmake/HybridStructures/HybridStructuresTargets.cmake
-/usr/local/lib/cmake/HybridStructures/HybridStructuresTargets-debug.cmake
-/usr/local/include/hybridstructures/version.hpp
-/usr/local/include/hybridstructures/hybridDS.hpp
-/usr/local/lib/cmake/HybridStructures/HybridStructuresConfig.cmake
-/usr/local/lib/cmake/HybridStructures/HybridStructuresConfigVersion.cmake
