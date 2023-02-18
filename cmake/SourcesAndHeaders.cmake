@@ -1,5 +1,5 @@
 set(sources
-    src/hybridDS.cpp
+    src/main.cpp
 )
 
 set(exe_sources
@@ -8,9 +8,9 @@ set(exe_sources
 )
 
 set(headers
-    include/hybridstructures/hybridDS.hpp
+    include/hybridstructures/consistentHash.hpp
 )
 
 set(test_sources
-  src/hybrid_test.cpp
+  src/consistent_test.cpp
 )
