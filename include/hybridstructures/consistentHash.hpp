@@ -2,9 +2,9 @@
 #define CONSISTENTHASH_H_
 
 #include <map>
+#include <stdexcept>
 #include <string>
 #include <vector>
-#include <stdexcept>
 
 namespace HybridStructures {
 

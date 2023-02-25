@@ -3,6 +3,7 @@ A C++ library for various hybrid data structures.
 
 ![GitHub](https://img.shields.io/github/license/luo-anthony/hybrid-data-structures)
 ![Issues](https://img.shields.io/github/issues/luo-anthony/hybrid-data-structures)
+[![codecov](https://app.codecov.io/gh/luo-anthony/hybrid-data-structures/branch/main/graph/badge.svg)](https://app.codecov.io/gh/luo-anthony/hybrid-data-structures)
 
 ## Overview 
 
@@ -17,7 +18,5 @@ Using C++ project template from: https://github.com/TheLartians/ModernCppStarter
 
 ### TODO
  - Add static analyzers
- - Add back license
- - Add code coverage badge 
  - Add unit tests + integration tests
  - Finish setting up Github Actions 
