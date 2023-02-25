@@ -7,8 +7,6 @@
 
 namespace HybridStructures {
 
-// TODO make spacing consistent 
-
 template <typename T>
 class ConsistentHashRing{
 private:
