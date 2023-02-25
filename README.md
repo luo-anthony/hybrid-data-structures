@@ -15,3 +15,9 @@ This library will contain various hybrid data structures such as the folllowing:
 ### References
 Using C++ project template from: https://github.com/TheLartians/ModernCppStarter
 
+### TODO
+ - Add static analyzers
+ - Add back license
+ - Add code coverage badge 
+ - Add unit tests + integration tests
+ - Finish setting up Github Actions 
