@@ -13,5 +13,5 @@ This library will contain various hybrid data structures such as the folllowing:
 
 
 ### References
-Using C++ project template from: https://github.com/filipdutescu/modern-cpp-template
+Using C++ project template from: https://github.com/TheLartians/ModernCppStarter
 
