@@ -42,8 +42,12 @@ namespace HybridStructures {
 
     ConsistentHashRing(int nReps);
 
+    ~ConsistentHashRing();
+
     // TODO: possibly support custom hash
     // ConsistentHashRing(int nReps, std::hash<std::string> customHash);
+
+    // ConsistentHashRing(int nReps, function<std::string(const T& node)> strFunc);
 
     // node can be a struct containing some ip address / other details
     void addNode(const T& node);
@@ -56,6 +60,8 @@ namespace HybridStructures {
 
     int size();
 
+    int getReplicationFactor();
+
     // TODO: make this function more efficient
     std::vector<T> getClosestN(const std::string& key, int n);
 
@@ -66,6 +72,8 @@ namespace HybridStructures {
       : replicationFactor{nReps} {
     replicationFactor = std::max(minReplicas, replicationFactor);
   }
+
+  template <typename T> ConsistentHashRing<T>::~ConsistentHashRing() {}
 
   template <typename T> std::string ConsistentHashRing<T>::nodeToString(const T& node) {
     return std::to_string(node);
@@ -149,11 +157,16 @@ namespace HybridStructures {
       throw std::runtime_error("Error: Hash Ring does not contain enough nodes.");
     }
 
+    if (n < 0) {
+      throw std::runtime_error("Error: cannot get negative number of nodes");
+    }
+
+    std::vector<T> outputNodes(n);
+
     size_t hash = hashFunc(key);
 
     // the node(s) to return starts at the node with hash >= hash of the value we want
     auto itr = internalRing.upper_bound(hash);
-    std::vector<T> outputNodes(n);
     for (auto i = 0; i < n; i++) {
       if (itr == internalRing.end()) {
         // there is no greater hash value, wrap around to the start of the ring
@@ -170,6 +183,10 @@ namespace HybridStructures {
   std::string ConsistentHashRing<T>::getNodeRepString(const T& node, int repNum) {
     return nodeToString(node) + " - RepN: " + std::to_string(repNum + baseNum);
     // return std::format(hashForm, nodeToString(node), std::to_string(repNum + baseNum));
+  }
+
+  template <typename T> int ConsistentHashRing<T>::getReplicationFactor() {
+    return this->replicationFactor;
   }
 
 }  // namespace HybridStructures
