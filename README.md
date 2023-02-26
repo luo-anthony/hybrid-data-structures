@@ -19,10 +19,23 @@ This library will contain various hybrid data structures such as the folllowing:
 ### References
 Using C++ project template from: https://github.com/TheLartians/ModernCppStarter
 
+#### Building Everything
+```
+cmake -S all -B build
+cmake --build build
+
+# run tests
+./build/test/GreeterTests
+# format code
+cmake --build build --target fix-format
+# run standalone
+./build/standalone/Greeter --help
+# build docs
+cmake --build build --target GenerateDocs
+```
+
 ### TODO
- - Add unit tests + integration tests
- - Finish setting up Github Actions 
- - Figure out why codecov is not picking up coverage on most lines, could be because need to actually exercise them 
+ - Finish setting up Github Actions / CI / CD
  - Check if anything missing from previous iteration of library
  - See ISSUES
  - Add static analyzers
