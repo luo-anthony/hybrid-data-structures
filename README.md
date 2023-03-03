@@ -16,26 +16,31 @@ This library will contain various hybrid data structures such as the folllowing:
  - **Various Cache Structures (maybe)**, such as LRU/LFU cache
 
 
-### References
-Using C++ project template from: https://github.com/TheLartians/ModernCppStarter
-
-#### Building Everything
+#### Building Library 
 ```
-cmake -S all -B build
-cmake --build build
+cmake -S all -B build -DENABLE_TEST_COVERAGE=1 -DUSE_STATIC_ANALYZER=clang-tidy
+cmake --build build -j4
 
 # run tests
-./build/test/GreeterTests
+cmake --build build/test --target test
+
 # format code
 cmake --build build --target fix-format
+
 # run standalone
-./build/standalone/Greeter --help
+./build/standalone/HybridStructures --help
+
 # build docs
 cmake --build build --target GenerateDocs
+
 ```
 
-### TODO
+NOTE: `.gcno` and `.gcda` coverage files are located in `build/test/CMakeFiles/HybridStructuresTests.dir/source/`
+
+#### References
+Using C++ project template from: https://github.com/TheLartians/ModernCppStarter
+
+#### TODO
  - Finish setting up Github Actions / CI / CD
  - Check if anything missing from previous iteration of library
  - See ISSUES
- - Add static analyzers
