@@ -39,8 +39,3 @@ NOTE: `.gcno` and `.gcda` coverage files are located in `build/test/CMakeFiles/H
 
 #### References
 Using C++ project template from: https://github.com/TheLartians/ModernCppStarter
-
-#### TODO
- - Finish setting up Github Actions / CI / CD
- - Check if anything missing from previous iteration of library
- - See ISSUES
